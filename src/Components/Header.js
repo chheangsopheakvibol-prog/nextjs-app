@@ -1,12 +1,9 @@
 import React from 'react'
 import Link from "next/link"
 
-
-export default function layout({children}) {
+export default function Header() {
   return (
-<html>
-  <body>
-        <div>
+    <div>
        <header className='p-4 bg-red-300 flex gap-4'>
            <Link href="/">Home</Link>
           <Link href="/about">about</Link>  
@@ -15,11 +12,8 @@ export default function layout({children}) {
            
            
              </header>
-             {children}
         
         </div>
-  </body>
-</html>
 
   )
 }
